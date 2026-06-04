@@ -111,7 +111,7 @@ export default function Footer() {
             <div className="rounded-sm overflow-hidden border border-gold/15 h-40 md:h-44 luxury-shadow">
               <iframe
                 title="Hotel Subansiri Mini Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.0!2d91.7362!3d26.1478!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3581.414998841019!2d91.7861077!3d26.150610699999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x375a591860abfb57%3A0xa30fdc753ef15b2b!2sHotel%20Subansiri!5e0!3m2!1sen!2sin!4v1780597228595!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{
