@@ -10,7 +10,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 
-const HOTEL_WHATSAPP = "919707741308";
+const HOTEL_WHATSAPP = "918453243950";
 
 const roomTypes = [
   "Standard Room",
@@ -388,7 +388,7 @@ export default function BookingCard() {
           style={{ backgroundColor: "#12362D" }}
         >
           <a
-            href="tel:+919707741308"
+            href="tel:+918453243950"
             aria-label="Call hotel"
             className="flex-1 flex items-center justify-center gap-2 py-4 text-ivory text-sm font-inter tracking-wider border-r border-gold/20 hover:bg-white/5 transition-colors focus:outline-none focus:bg-white/10"
           >

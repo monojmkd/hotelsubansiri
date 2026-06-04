@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, MessageCircle } from "lucide-react";
 import { useScrollReveal } from "../hooks/useScrollReveal";
 
-const HOTEL_WHATSAPP = "919707741308";
+const HOTEL_WHATSAPP = "918453243950";
 
 export default function Contact() {
   const [form, setForm] = useState({
@@ -86,7 +86,7 @@ export default function Contact() {
                   </p>
 
                   <a
-                    href="tel:+919707741308"
+                    href="tel:+918453243950"
                     className="text-ivory font-inter text-base hover:text-gold transition-colors"
                   >
                     +91 97077 41308
