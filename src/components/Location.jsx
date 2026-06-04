@@ -29,7 +29,10 @@ const travelTimes = [
 
 export default function Location() {
   return (
-    <section id="location" className="py-[12px] md:py-14 bg-ivory px-4">
+    <section
+      id="location"
+      className="py-10 md:py-14 bg-ivory px-4 overflow-x-hidden"
+    >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
           <p className="text-gold font-inter text-xs tracking-[0.4em] uppercase mb-4">
@@ -43,11 +46,11 @@ export default function Location() {
         <div className="grid md:grid-cols-2 gap-8 items-stretch">
           {/* Map */}
           <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
-            className="rounded-sm overflow-hidden luxury-shadow border border-charcoal/10 min-h-80"
+            className="rounded-sm overflow-hidden luxury-shadow border border-charcoal/10 min-h-80 w-full"
           >
             <iframe
               title="Hotel Subansiri Location"
@@ -63,8 +66,8 @@ export default function Location() {
 
           {/* Address card */}
           <motion.div
-            initial={{ opacity: 0, x: 40 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7 }}
             className="flex flex-col gap-5"

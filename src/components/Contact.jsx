@@ -40,7 +40,10 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-10 md:py-14 bg-ivory px-4">
+    <section
+      id="contact"
+      className="py-10 md:py-14 bg-ivory px-4 overflow-x-hidden"
+    >
       <div ref={ref} className="section-reveal max-w-6xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-8">
@@ -61,8 +64,8 @@ export default function Contact() {
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {/* Contact Information */}
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             className="bg-forest rounded-2xl p-5 md:p-6 luxury-shadow"
@@ -149,8 +152,8 @@ export default function Contact() {
 
           {/* WhatsApp Form */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
