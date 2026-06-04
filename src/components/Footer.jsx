@@ -72,14 +72,14 @@ export default function Footer() {
             </h4>
             <div className="flex flex-col gap-4">
               <a
-                href="tel:+91XXXXXXXXXX"
+                href="tel:+918453243950"
                 className="flex items-start gap-3 text-ivory/55 hover:text-gold transition-colors group"
               >
                 <Phone
                   size={13}
                   className="flex-none mt-0.5 group-hover:text-gold"
                 />
-                <span className="font-inter text-sm">+91 XXXXX XXXXX</span>
+                <span className="font-inter text-sm">+91 8453243950</span>
               </a>
               <a
                 href="mailto:info@hotelsubansiri.com"

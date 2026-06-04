@@ -27,8 +27,8 @@ const galleryItems = [
     image: hotelImages.dining,
     span: "md:col-span-2",
   },
-  { id: 8, label: "Hotel Corridor", image: hotelImages.corridor, span: "" },
-  { id: 9, label: "Facade at Night", image: hotelImages.facadeNight, span: "" },
+  // { id: 8, label: "Hotel Corridor", image: hotelImages.corridor, span: "" },
+  // { id: 9, label: "Facade at Night", image: hotelImages.facadeNight, span: "" },
 ];
 
 export default function Gallery() {
