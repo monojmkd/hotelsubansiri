@@ -89,7 +89,7 @@ export default function Contact() {
                     href="tel:+918453243950"
                     className="text-ivory font-inter text-base hover:text-gold transition-colors"
                   >
-                    +91 97077 41308
+                    +91 8453243950
                   </a>
 
                   <p className="text-ivory/40 text-xs mt-1">Available 24×7</p>
@@ -193,7 +193,7 @@ export default function Contact() {
                       phone: e.target.value,
                     })
                   }
-                  placeholder="+91 XXXXX XXXXX"
+                  placeholder="+91 8453243950"
                   className="border border-charcoal/15 bg-white px-4 py-3 rounded-xl font-inter text-sm focus:outline-none focus:border-gold/60"
                 />
               </div>

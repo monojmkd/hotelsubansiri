@@ -15,7 +15,7 @@ const experiences = [
     subtitle: "The Warmth of Assam",
     desc: "Personalised service and genuine Assamese hospitality that makes every guest feel welcome.",
     points: ["Friendly staff", "Local guidance", "Personal attention"],
-    image: hotelImages.reception,
+    image: hotelImages.standardRoom,
   },
   {
     title: "Convenient Location",
@@ -26,7 +26,7 @@ const experiences = [
       "Airport connectivity",
       "Nearby attractions",
     ],
-    image: hotelImages.corridor,
+    image: hotelImages.exterior,
   },
 ];
 
