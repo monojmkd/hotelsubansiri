@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Phone } from 'lucide-react';
+import { useState, useEffect } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, Phone } from "lucide-react";
 
-const links = ['Rooms', 'Amenities', 'Gallery', 'Location', 'Contact'];
+const links = ["Rooms", "Amenities", "Gallery", "Location", "Contact"];
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -10,14 +10,14 @@ export default function Navbar() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
-    window.addEventListener('scroll', onScroll);
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const scrollTo = (id) => {
     setOpen(false);
     const el = document.getElementById(id.toLowerCase());
-    el?.scrollIntoView({ behavior: 'smooth' });
+    el?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -27,23 +27,30 @@ export default function Navbar() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled ? 'glass-dark luxury-shadow' : 'bg-transparent'
+          scrolled ? "glass-dark luxury-shadow" : "bg-transparent"
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 md:px-8 h-16 md:h-20 flex items-center justify-between">
           {/* Logo */}
-          <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="flex flex-col leading-none">
-            <span className="font-playfair text-gold text-lg md:text-xl font-semibold tracking-widest uppercase">Hotel</span>
-            <span className="font-playfair text-ivory text-xl md:text-2xl font-semibold tracking-wider">Subansiri</span>
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="flex flex-col leading-none"
+          >
+            <span className="font-playfair text-gold text-lg md:text-xl font-semibold tracking-[0.12em] uppercase">
+              Hotel
+            </span>
+            <span className="font-playfair text-ivory text-xl md:text-2xl font-semibold tracking-wider">
+              Subansiri
+            </span>
           </button>
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-8">
-            {links.map(link => (
+            {links.map((link) => (
               <button
                 key={link}
                 onClick={() => scrollTo(link)}
-                className="text-ivory/80 hover:text-gold font-inter text-sm tracking-widest uppercase transition-colors duration-300"
+                className="text-ivory/80 hover:text-gold font-inter text-sm tracking-[0.12em] uppercase transition-colors duration-300"
               >
                 {link}
               </button>
@@ -60,7 +67,7 @@ export default function Navbar() {
               Call Now
             </a>
             <button
-              onClick={() => scrollTo('contact')}
+              onClick={() => scrollTo("contact")}
               className="bg-gold text-forest px-5 py-2 text-sm tracking-wider font-semibold hover:bg-gold-light transition-all duration-300"
             >
               Book Stay
@@ -95,13 +102,13 @@ export default function Navbar() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.06 }}
                   onClick={() => scrollTo(link)}
-                  className="text-ivory text-left font-inter text-base tracking-widest uppercase border-b border-gold/10 pb-4 last:border-0 hover:text-gold transition-colors"
+                  className="text-ivory text-left font-inter text-base tracking-[0.12em] uppercase border-b border-gold/10 pb-4 last:border-0 hover:text-gold transition-colors"
                 >
                   {link}
                 </motion.button>
               ))}
               <button
-                onClick={() => scrollTo('contact')}
+                onClick={() => scrollTo("contact")}
                 className="bg-gold text-forest py-3 font-semibold tracking-wider text-sm mt-2"
               >
                 Book Your Stay

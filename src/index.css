@@ -23,7 +23,9 @@ body {
   font-family: "Inter", system-ui, sans-serif;
   background: var(--ivory);
   color: var(--charcoal);
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
+  width: 100%;
+  overflow-x: clip;
 }
 
 button,
