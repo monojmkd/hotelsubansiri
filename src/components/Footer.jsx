@@ -139,7 +139,7 @@ export default function Footer() {
         <p className="text-ivory/25 font-inter text-xs mt-1 text-center">
           Made by{" "}
           <a
-            href="#"
+            href="https://monojkumardas.in/"
             className="text-gold/50 hover:text-gold transition-colors"
           >
             monoj.mkd
